@@ -33,7 +33,9 @@ polygon.label-container {
   stroke: rgba(3, 195, 169, 1) !important;
 }
 
-.markdown-preview-view .mermaid ellipse.label-container {
+.markdown-preview-view .mermaid ellipse.label-container,
+path.label-container,
+rect:not(.label-container) {
   fill: rgba(242, 242, 255, 1) !important;
   stroke: rgba(154, 150, 255, 1) !important;
 }
