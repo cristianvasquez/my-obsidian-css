@@ -1,0 +1,65 @@
+/* mermaid.js styling */
+.markdown-preview-view .mermaid {
+  border: 1px solid var(--shade-20) !important;
+  border-radius: var(--radius-s);
+  padding: 4px !important;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  background: whitesmoke !important;
+}
+
+.markdown-preview-view .mermaid svg {
+  width: 100%;
+  text-align: center;
+  padding: 4px !important;
+  margin: 0px !important;
+  vertical-align: middle !important;
+}
+
+/* Graph view */
+.markdown-preview-view .mermaid rect.label-container,
+circle.label-container,
+rect.note,
+rect.er.entityBox,
+rect.outer {
+  fill: rgba(255, 243, 217, 1) !important;
+  stroke: rgba(248, 92, 0, 1) !important;
+}
+
+.markdown-preview-view .mermaid rect.actor,
+polygon.label-container {
+  fill: rgba(215, 250, 245, 1) !important;
+  stroke: rgba(3, 195, 169, 1) !important;
+}
+
+.markdown-preview-view .mermaid ellipse.label-container {
+  fill: rgba(242, 242, 255, 1) !important;
+  stroke: rgba(154, 150, 255, 1) !important;
+}
+
+.markdown-preview-view .mermaid .label,
+span.nodeLabel {
+  color: black !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+.markdown-preview-view .mermaid rect.actor tspan {
+  color: black !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+.markdown-preview-view .mermaid .edgeLabel,
+.relation,
+.edgePath {
+  color: black !important;
+  background-color: whitesmoke !important;
+}
+
+.markdown-preview-view .mermaid .edgePaths defs * {
+  fill: black !important;
+  background-color: whitesmoke !important;
+}
+/* end */

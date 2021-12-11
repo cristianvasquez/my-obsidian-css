@@ -1,0 +1,69 @@
+/* variables */
+:root {
+  --folder-middle: #1f6874;
+  --folder2-middle: #88309e;
+}
+
+/* relationship lines for files */
+
+.nav-folder-children .nav-folder-children {
+  margin-left: 20px;
+  padding-left: 0;
+  border-left: 2px solid var(--folder-middle);
+  border-radius: 4px;
+  transition: all 0.5s ease-in-out;
+}
+.nav-folder-children .nav-folder-children:hover {
+  border-left-color: var(--folder2-middle);
+}
+
+/* relationship lines for headers */
+
+.tree-item .tree-item-children {
+  margin-left: 20px;
+  padding-left: 0;
+  border-left: 2px solid var(--folder-middle);
+  border-radius: 4px;
+  transition: all 0.5s ease-in-out;
+}
+.tree-item .tree-item-children:hover {
+  border-left-color: var(--folder2-middle);
+}
+
+/* relationship lines for search results */
+
+.search-result {
+  margin-left: 20px;
+  padding-left: 0;
+  border-left: 2px solid var(--folder-middle);
+  border-radius: 4px;
+  transition: all 0.5s ease-in-out;
+}
+.search-result:hover {
+  border-left-color: var(--folder2-middle);
+}
+
+/* Folder and file icons */
+
+.nav-folder-children .nav-file-title-content:first-child::before {
+  content: "∙ ";
+}
+.nav-folder-children .nav-folder-title-content::before {
+  content: "(";
+}
+
+.nav-folder-children .nav-folder-title-content::after {
+  content: " )";
+}
+
+/*hover color*/
+
+.nav-folder-title:hover .nav-folder-title-content::before {
+  /* hover color   #69fafd  👆   CSS filter 👇  */
+  filter: invert(87%) sepia(20%) saturate(1026%) hue-rotate(113deg)
+    brightness(105%) contrast(103%);
+}
+
+.nav-folder-children:hover {
+  filter: brightness(110%);
+}

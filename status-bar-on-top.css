@@ -1,0 +1,16 @@
+/* status bar */
+
+.status-bar {
+  border: none;
+  position: absolute;
+  margin-top: -18px;
+  width: calc(100% - 120px - 500px);
+  margin-left: 500px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .status-bar {
+    display: none;
+  }
+}

@@ -1,0 +1,98 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+:root {
+  --rmk-color: 255, 56, 96;
+  --qn-color: 255, 120, 15;
+  --impt-color: 255, 221, 87;
+  --ex-color: 35, 209, 96;
+  --tip-color: 0, 209, 178;
+  --oth-color: 32, 156, 238;
+  --todo-color: 138, 43, 226;
+  --ref-color: 200, 200, 200;
+}
+
+.tag {
+  font-family: fira code medium;
+  font-weight: bold;
+  font-size: 1em !important;
+}
+/* .tag[href="#R"]::before,
+.tag[href="#Q"]::before,
+.tag[href="#S"]::before,
+.tag[href="#E"]::before,
+.tag[href="#T"]::before,
+.tag[href="#O"]::before { display: inline-block; position: relative; text-align: right; width: 17px; } */
+
+.tag[href="#R"] {
+  background-color: rgba(var(--rmk-color), 0.5) !important;
+}
+.tag[href="#R"]::before {
+  content: "🔺";
+}
+/* .tag[href^="#R"]::before {
+	display: inline;
+	content: url("data:image/svg+xml;utf8,<svg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='exclamation-triangle' class='svg-inline--fa fa-exclamation-triangle fa-w-18' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'><path fill='currentColor' d='M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z'></path></svg>");
+} */
+.tag[href="#Q"] {
+  background-color: rgba(var(--qn-color), 0.5) !important;
+}
+.tag[href="#Q"]::before {
+  content: "🟠";
+}
+.tag[href="#S"] {
+  background-color: rgba(var(--impt-color), 0.5) !important;
+}
+.tag[href="#S"]::before {
+  content: "⭐";
+}
+.tag[href="#E"] {
+  background-color: rgba(var(--ex-color), 0.5) !important;
+}
+.tag[href="#E"]::before {
+  content: "🟩";
+}
+.tag[href="#T"] {
+  background-color: rgba(var(--tip-color), 0.5) !important;
+}
+.tag[href="#T"]::before {
+  content: "💜";
+}
+.tag[href="#O"] {
+  background-color: rgba(var(--oth-color), 0.5) !important;
+}
+.tag[href="#O"]::before {
+  content: "🔷";
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-R {
+  color: rgb(var(--rmk-color));
+  font-weight: bolder;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-Q {
+  color: rgb(var(--qn-color));
+  font-weight: bolder;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-S {
+  color: rgb(var(--impt-color));
+  font-weight: bolder;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-E {
+  color: rgb(var(--ex-color));
+  font-weight: bolder;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-T {
+  color: rgb(var(--tip-color));
+  font-weight: bolder;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-O {
+  color: rgb(var(--oth-color));
+  font-weight: bolder;
+}
+/* .cm-tag-R.cm-formatting-hashtag:before {
+	content: "❗";
+} */

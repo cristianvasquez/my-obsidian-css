@@ -1,0 +1,22 @@
+/* .graph-view.color-fill
+  .graph-view.color-fill-tag
+  (theme-dependent)
+  .graph-view.color-fill-attachment
+  (theme-dependent)
+  .graph-view.color-arrow
+  .graph-view.color-circle
+  .graph-view.color-line
+  .graph-view.color-text
+  .graph-view.color-fill-highlight
+  .graph-view.color-line-highlight
+  .graph-view.color-fill-unresolved; */
+
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+  color: var(--text-accent-hover) !important;
+}
+
+.graph-view.color-circle,
+.graph-view.color-line {
+  color: var(--text-accent) !important;
+}

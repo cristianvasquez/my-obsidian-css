@@ -1,0 +1,11 @@
+.workspace-tab-header-inner-icon {
+  color: #e0714f;
+}
+
+.is-active .workspace-tab-header-inner-icon {
+  color: #f0cece;
+}
+
+/* .workspace-tab-header-inner-icon {
+  color: var(--folder-middle);
+} */
